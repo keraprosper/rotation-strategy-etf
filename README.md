@@ -1,6 +1,6 @@
 # rotation-strategy-etf
 
-## Overview ~
+## OVERVIEW ~
 
 This project is a ETF rotation strategy using python and historical data pulled from Yahoo Finance. It selects top performing ETFs from the 3 most recent months and rebalances monthly. This process aims to perform better than a traditional buy-and-hold benchmark.
 
