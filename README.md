@@ -1,10 +1,10 @@
 # rotation-strategy-etf
 
-OVERVIEW ~
+**OVERVIEW ~**
 
 This project is a ETF rotation strategy using python and historical data pulled from Yahoo Finance. It selects top performing ETFs from the 3 most recent months and rebalances monthly. This process aims to perform better than a traditional buy-and-hold benchmark.
 
-INTRODUCTION ~
+**INTRODUCTION ~**
 
 An ETF is essentially a pre-packaged portfolio of assets that one can trade as they do a stock. It's a great way to gain broader access to markets and strategies without the hassle of individually composing a portfolio, great for passive investors. 
 
@@ -12,24 +12,24 @@ However, not all ETFs perform equally since the composition varies. This project
 
 Historical data is analyzed from both sector and global ETFs. The strategy will select the best performing ETF each month and reallocate the portfolio based on it's composition. The performance chart included in the results portion of this README will show if this strategy outperforms the more traditional SPY model. 
 
-LOGIC ~
+**LOGIC ~**
 
 universe: SPY, QQQ, IWM, EFA, EEM, XLK, XLF, XLE
 frequency: monthly
 ranking: most recent 3 months
 allocation: equal-weight top 3 ETFs
 
-TOOLS USED ~
+**TOOLS USED ~**
 
 1. Jupyter Notebook 
 2. Python, pandas, NumPy, yfinance, and matplotlib
 
-FILES ~
+**FILES ~**
 - notebook/etf_strategy.ipynb for complete code 
 - src for modular strategy components 
 - README.md for project overview 
 
-RESULTS ~
+**RESULTS ~**
 Below is the resulting chart which compares the ETF rotation strategy to the SPY benchmark from 2018 - 2024. 
 
 ![Strategy Performance](performance_chart.png)
@@ -44,7 +44,7 @@ In 2022, SPY shows sharp drawdowns, while the rotation strategy avoids big losse
 
 Finally, the period from 2023-2024 shows that SPY skyrocketed while the rotation strategy flattened. The strongest performers of this period were big tech, specifically AI. The logic behind the lackluster performance may once again be due to a more diverse composition compared to the S&P 500's big tech concentration. 
 
-PERFORMANCE ANALYSIS ~
+**PERFORMANCE ANALYSIS ~**
 
 format: matric | rotation strategy | SPY benchmark
 
@@ -61,4 +61,4 @@ MAX DRAWDOWN -> "Drawdown" meausures decline from a peak to a trough in this cha
 
 OVERALL, the SPY model is better for long-term investments and maximum growth, but for those seeking more stability, the rotation strategy would be the more sensible choice. Limiting losses and maintaining steadier returns may hold more value in uncertain markets. 
 
-Thank you for viewing! <3
+**Thank you for viewing! <3 - kera**
